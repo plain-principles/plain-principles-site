@@ -23,5 +23,13 @@ jobs:
         with:
           path: .
 
+      # Workaround to preload upload-artifact@v3 to avoid "missing download info" error
+      - name: Preload upload-artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy
+          path: ./nonexistent
+          if-no-files-found: ignore
+
       - name: Deploy
         uses: actions/deploy-pages@v2
