@@ -24,7 +24,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: linear-gradient(135deg, #2a4738, #4b8467);
+  background: linear-gradient(135deg, #4b8467, #2a4738);
   border-radius: 12px 12px 0 0;
   color: #fff;
   padding: 2rem;
