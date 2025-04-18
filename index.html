@@ -5,6 +5,37 @@
   <meta charset="UTF-8" />
   <title>The Plain Principles</title>
   <link rel="stylesheet" href="main.css" />
+  <!-- Footnote pop‑up styling -->
+  <style>
+    .footnote {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .footnote sup {
+      font-size: 0.75em;
+      vertical-align: super;
+    }
+
+    .footnote-popup {
+      display: none;
+      position: absolute;
+      top: 1.2em;
+      left: 0;
+      z-index: 100;
+      max-width: 300px;
+      padding: 8px;
+      border: 1px solid #999;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      font-size: 0.9em;
+      line-height: 1.2em;
+    }
+
+    .footnote:hover .footnote-popup {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,7 +46,7 @@
     </header>
 
     <p>A lucid summary of the ethics of the Baha'i Faith</p>
-    <p>based on <em>The Hidden Words</em> by Bahá’u’lláh</p>
+    <p>based on The Hidden Words by Bahá’u’lláh</p>
     <p>by Munir and Shaun</p>
 
     <section>
@@ -23,13 +54,13 @@
       <p>
         Although the Bahá'í Faith was only founded in the nineteenth century, it is now one of the most rapidly-growing
         world religions.
-        <em>The Hidden Words</em>—the preeminent ethical work of Bahá’u’lláh, the Faith’s prophet-founder—is an
+        The Hidden Words—the preeminent ethical work of Bahá’u’lláh, the Faith’s prophet-founder—is an
         excellent starting place for learning what moral teachings the Faith upholds.
         The book contains 153 short passages (originally, 71 in Arabic and 82 in Persian).
-        Below, we have attempted to condense all 153 <em>Hidden Words</em> into 18 "Plain Principles" that capture the
+        Below, we have attempted to condense all 153 Hidden Words into 18 "Plain Principles" that capture the
         essence of the book—but please note that the Principles we have constructed bear no religious authority and are
         merely our own interpretations; we encourage your critical evaluation.
-        References to the <em>Hidden Words</em> comprising each Principle are listed at the end.
+        References to the Hidden Words comprising each Principle are listed at the end.
       </p>
     </section>
 
@@ -52,9 +83,9 @@
           source of creation. We enliven our souls by fulfilling God's desire for us to reciprocate that love, a purpose
           for which we should strive immediately for God's love to most fruitfully enrich us. Within this framework,
           meaningful joy is closeness to God, and sorrow remoteness. Thus, while material possessions are not inherently
-          harmful, we must not let them stifle our spirituality, which is ultimately most important. God's love is
-          eternal within us, making us likewise eternal, so instead of fearing death, we should cultivate spiritual
-          virtues that bring us closer to God—both in this realm and in the next.
+          harmful, we must not let them stifle our spirituality, which is ultimately most important. God's impression is
+          eternal within us, making us likewise eternal, so instead of fearing death, we should cultivate
+          spiritual virtues that bring us closer to God—both in this realm and in the next.
         </li>
       </ol>
     </section>
@@ -62,7 +93,11 @@
     <section>
       <h2>On Oneself</h2>
       <ol start="3">
-        <li>Fundamentally, we must answer God's call: to love God. To do this, we must recognize His superiority and
+        <li>Fundamentally, we must answer God's call: to love God. To do this, we must recognize His <span
+            class="footnote"><sup>[1]</sup><span class="footnote-popup">The Bahá'í teachings describe God as neither
+              male nor female, although the limitations and conventions of our language and many others have led us to
+              refer to Him in the masculine.<br><br>Bowers, Kenneth E. “How the Baha’i Writings Describe God.”
+              <em>BahaiTeachings.org</em>, June 5, 2015.</span></span> superiority and
           submit to Him, with mindful gratitude that God continually refreshes us with new spiritual inspiration.
           Prompted by love, we must earnestly abide by God's laws and teachings.</li>
         <li>Concomitant with loving God is trusting God—trusting that He has already given us everything we need to
@@ -75,8 +110,8 @@
           Intellectuality absent of spirituality can never attain its fullest potential.</li>
         <li>Among the virtues we must adorn ourselves with are courage, purity of heart, and patience. We must detach
           ourselves from the uncontrollable vicissitudes of physical life, eschewing vain or materialistic
-          desires—turning our attention instead to our spiritual growth, appreciating the difficulties that cultivate
-          it.</li>
+          desires—turning
+          our attention instead to our spiritual growth, appreciating the difficulties that cultivate it.</li>
         <li>To love God and attain true peace, we must renounce our desires in favor of God's, so our mortal ego is
           replaced by the infinitude of God. We must follow God authentically, careful not to conflate His wisdom with
           our selfish desires. Thus, we must pursue meaningful hardship over meaningless comfort, and refrain from
@@ -86,8 +121,9 @@
         <li>We must be perceptive, intentional, coherent, and consistent; accordingly, we should not wish for that which
           God would not wish for us.</li>
         <li>Instead of blindly following others, we must each use our free will to think critically about
-          everything—including the principles discussed in this work—and to reflect daily upon our actions and decisions
-          in relation to our spiritual development.</li>
+          everything—including
+          the principles discussed in this work—and to reflect daily upon our actions and decisions in relation to our
+          spiritual development.</li>
         <li>We must recognize God's presence and, in meditating upon His wisdom, aim to reflect His qualities to realize
           an everlasting and joyful peace.</li>
       </ol>
@@ -104,7 +140,8 @@
           highly of ourselves. Likewise, we must not speak degradingly of others.</li>
         <li>We all come from the same Source. We must each eschew envy and hypocrisy, prefer others before ourselves,
           focus not on others' faults but our own, and neither attribute nor wish that which we would not want
-          attributed to or wished upon us.</li>
+          attributed
+          to or wished upon us.</li>
         <li>We must have discernment—guided by a sense of fairness free from prejudice and bias—especially when deciding
           the wholesomeness of what to consume and the character of whom to befriend.</li>
         <li>We must be productive, engage in work, and contribute to society—motivated by the knowledge that sacrifice
@@ -113,6 +150,7 @@
           service to God.</li>
       </ol>
     </section>
+
     <section>
       <h2>References</h2>
       <p>
@@ -146,11 +184,6 @@
     </section>
 
   </div>
-</body>
-
-</html>
-
-</div>
 </body>
 
 </html>
