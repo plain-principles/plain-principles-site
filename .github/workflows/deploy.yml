@@ -1,17 +1,6 @@
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [main]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
 
@@ -23,7 +12,6 @@ jobs:
         with:
           path: .
 
-      # Workaround to preload upload-artifact@v3 to avoid "missing download info" error
       - name: Preload upload-artifact
         uses: actions/upload-artifact@v3
         with:
