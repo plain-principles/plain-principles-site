@@ -8,7 +8,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f3f7fa;
   color: #333;
-  line-height: 1.75
+  line-height: 1.75;
 }
 
 .container {
@@ -17,23 +17,24 @@ body {
   padding: 2rem;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, .08)
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: linear-gradient(135deg, #6aaefc, #3d8bff);
+  background: linear-gradient(135deg, #2a4738, #4b8467);
   border-radius: 12px 12px 0 0;
   color: #fff;
   padding: 2rem;
-  margin: -2rem -2rem 2rem
+  margin: -2rem -2rem 2rem;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: .75rem
+  /* fluid type scales between 1.75rem and 2.5rem */
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  margin-bottom: .75rem;
 }
 
 .download-btn {
@@ -41,14 +42,16 @@ header h1 {
   padding: .7rem 1.5rem;
   border-radius: 8px;
   background: #fff;
-  color: #3d8bff;
+  color: #2a4738;
   font-weight: bold;
-  transition: transform .2s, box-shadow .2s
+  transition: transform .2s, box-shadow .2s;
+  font-size: clamp(.9rem, 3.5vw, 1rem);
+  display: inline-block;
 }
 
 .download-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, .15)
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .15);
 }
 
 section {
@@ -60,7 +63,7 @@ h2 {
   margin-bottom: .75rem;
   padding-bottom: .5rem;
   border-bottom: 2px solid #e1e8ee;
-  color: #222
+  color: #222;
 }
 
 p,
@@ -82,7 +85,7 @@ footer {
   border-top: 1px solid #e1e8ee;
   text-align: center;
   font-size: .9rem;
-  color: #aaa
+  color: #aaa;
 }
 
 .footnote {
@@ -114,4 +117,17 @@ footer {
 
 .footnote:hover .footnote-popup {
   display: block
+}
+
+@media(max-width:640px) {
+  header {
+    padding: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .download-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
