@@ -61,7 +61,9 @@ header.hero {
 .download-btn {
   text-decoration: none;
   display: inline-block;
-  padding: .7rem 1.5rem;
+  padding: .7rem 1.2rem;
+  width: auto;
+  align-self: start;
   border-radius: 8px;
   background: #fff;
   color: #2a4738;
@@ -114,9 +116,10 @@ h2 {
   font-weight: normal;
 }
 
-p{
+p {
   text-indent: 2em;
 }
+
 p,
 li {
   margin: .75rem 0
