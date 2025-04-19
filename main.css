@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 3rem auto;
   padding: 2rem;
   background: #fff;
@@ -114,6 +114,9 @@ h2 {
   font-weight: normal;
 }
 
+p{
+  text-indent: 2em;
+}
 p,
 li {
   margin: .75rem 0
@@ -121,7 +124,9 @@ li {
 
 ol,
 ul {
-  margin-left: 2rem
+  margin-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 li {
