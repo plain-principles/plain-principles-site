@@ -178,6 +178,22 @@ footer {
 
 /* ---------- MOBILE ---------- */
 @media(max-width:640px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .download-btn {
+    font-size: 1.1rem;
+  }
+
   header.hero {
     flex-direction: column;
     align-items: center;
