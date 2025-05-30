@@ -181,7 +181,7 @@ footer {
   }
 
   .tagline {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   h2 {
@@ -193,22 +193,24 @@ footer {
   }
 
   header.hero {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center
+    text-align: left;
+    gap: 1rem;
   }
 
-  .hero-left,
+  .hero-left {
+    flex: 0 0 auto;
+  }
+
   .hero-right {
-    align-items: center
+    flex: 1;
+    margin-top: 0;
+    align-items: flex-start;
   }
 
   .download-btn {
     width: 100%;
-    margin-top: 1rem
-  }
-
-  .hero-right {
-    margin-top: 1rem
+    margin-top: 1rem;
   }
 }
