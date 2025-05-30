@@ -92,6 +92,7 @@ header.hero {
   font-size: 1rem;
   line-height: 1.45;
   color: var(--primary);
+  white-space: nowrap;
 }
 
 .tagline em {
